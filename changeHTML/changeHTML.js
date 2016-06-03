@@ -5,7 +5,7 @@ function showText(){
 
 }
 function getToHtml(){
-    //window.location="showText.html";
-    window.open("showText.html?st="+sT+"&sd="+sD);
+    window.location="showText.html?st="+sT+"&sd="+sD;
+    //window.open("showText.html?st="+sT+"&sd="+sD);
 }
 
