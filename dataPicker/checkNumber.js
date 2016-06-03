@@ -1,7 +1,7 @@
 $(document).ready(function(){
  $("#submitbutton").click(function(){
     var str = document.getElementById('datetext').value.trim();
-        location.reload();
+        //location.reload();
         if(str.length!=0){
             var reg = new RegExp(/^(d{2})\/(d{2})\/(d{4})$/);
 

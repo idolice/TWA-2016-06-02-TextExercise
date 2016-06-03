@@ -1,18 +1,41 @@
 <html lang="en">
     <head>
         <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-
+        <link href="./openDialog/jquery-ui.css" rel="stylesheet">
     </head>
     <body>
-    <script type="text/javascript" src="date.js"></script>
+    <script src="main.js"></script>
+    <script src="./changeHTML/changeHTML.js"></script>
+    <script src="./changeHTML/saveText.js"></script>
+
+    <script src="./addDom/addDate.js"></script>
+    <script src="./addDom/addText.js"></script>
+    <script src="./openDialog/openWindow.js"></script>
+    <script src="./openDialog/jquery.js"></script>
+    <script src="./openDialog/jquery-ui.js"></script>
 
     <div class="container">
+        <div class="view" align="right">
+            <input class="preview" type="button" value="preview">
+        </div>
         <div class="textbox" align="center">
-            <form class="all">
-                input date<input type="text" id="datetext" name="y" >
-                <input type="button" id="submitbutton" value="submit">
-                <script type="text/javascript" src="checkNumber.js"></script>
-            </form>
+            <input class="add" type="button" value="+">
+            <div class="waitadd">
+
+            </div>
+            <div id="dialogt">
+                <div>
+                    <form>
+                        <input type="button" value="+" class="add1">
+                        <input type="date">
+                    </form>
+                    <form>
+                        <input type="button" value="+" class="add2">
+                        <input type="text">
+                    </form>
+
+                </div>
+            </div>
         </div>
     </div>
     </body>
