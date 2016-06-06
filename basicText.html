@@ -2,15 +2,17 @@
     <head>
         <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
         <link href="./openDialog/jquery-ui.css" rel="stylesheet" type="text/css">
-        <link href="./render/border.css" rel="stylesheet" type="text/css">
+
     </head>
     <body>
     <script src="main.js"></script>
     <script src="./changeHTML/changeHTML.js"></script>
-    <script src="./changeHTML/saveText.js"></script>
 
-    <script src="./addDom/addDate.js"></script>
-    <script src="./addDom/addText.js"></script>
+
+    <script src="./addDom/addInput.js"></script>
+    <script src="./addDom/deleteInput.js"></script>
+    <script src="./render/addControl.js"></script>
+    <script src="./render/explainJson.js"></script>
     <script src="./openDialog/openWindow.js"></script>
     <script src="./openDialog/jquery.js"></script>
     <script src="./openDialog/jquery-ui.js"></script>
@@ -27,12 +29,14 @@
             <div id="dialogt">
                 <div>
                     <form>
-                        <input type="button" value="+" class="add1">
+                        <input type="button" value="+" id="addate" class="add">
                         <input type="date">
+                        <input type="button" value="-" id="deldate" class="delete">
                     </form>
                     <form>
-                        <input type="button" value="+" class="add2">
+                        <input type="button" value="+" id="addtext" class="add">
                         <input type="text">
+                        <input type="button" value="-" id="deltext" class="delete">
                     </form>
 
                 </div>
